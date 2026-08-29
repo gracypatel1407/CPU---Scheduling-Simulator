@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CPU Scheduling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>CPU Scheduling Simulator</h1>
+
+<div class="box">
+
+    <h2>Enter Processes</h2>
+
+    <table id="inputTable">
+        <tr>
+            <th>Process</th>
+            <th>Arrival Time</th>
+            <th>Burst Time</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+
+    <button onclick="addProcess()">+ Add Process</button>
+
+    <br><br>
+
+    <button onclick="run('FCFS')">FCFS</button>
+    <button onclick="run('SJF')">SJF</button>
+
+</div>
+
+
+<div class="box">
+
+    <h2>Gantt Chart</h2>
+
+    <div id="gantt"></div>
+
+</div>
+
+
+<div class="box">
+
+    <h2>Result</h2>
+
+    <table id="result">
+        <tr>
+            <th>Process</th>
+            <th>AT</th>
+            <th>BT</th>
+            <th>CT</th>
+            <th>TAT</th>
+            <th>WT</th>
+        </tr>
+    </table>
+
+    <h3 id="average"></h3>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
